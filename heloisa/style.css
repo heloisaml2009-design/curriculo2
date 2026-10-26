@@ -1,0 +1,206 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef1f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.curriculo {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+.cabecalho {
+    background: linear-gradient(135deg, #23395d, #426b9a);
+    color: white;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.cabecalho h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.cabecalho p {
+    font-size: 14px;
+    color: #e3ebf5;
+}
+
+
+.conteudo {
+    padding: 30px 35px;
+}
+
+.secao {
+    margin-bottom: 25px;
+}
+
+
+.secao h2 {
+    color: #23395d;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #426b9a;
+    padding-bottom: 7px;
+    margin-bottom: 12px;
+}
+
+
+.secao p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.contato p {
+    margin-bottom: 5px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.contato strong {
+    color: #23395d;
+}
+
+
+.escola {
+    font-weight: bold;
+    color: #333;
+}
+
+.detalhes {
+    color: #555;
+    margin-top: 5px;
+}
+
+.disponibilidade {
+    background-color: #edf3fa;
+    border-left: 4px solid #426b9a;
+    padding: 12px 15px;
+    border-radius: 4px;
+}
+
+.rodape {
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .cabecalho {
+        padding: 28px 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .conteudo {
+        padding: 25px 20px;
+    }
+}
+
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .curriculo {
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .cabecalho {
+        background: #23395d !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .disponibilidade {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto 20px;
+}
+
+
+.botoes button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#btnEditar {
+    background-color: #23395d;
+    color: white;
+}
+
+#btnEditar:hover {
+    background-color: #426b9a;
+}
+
+#btnSair {
+    background-color: #c0392b;
+    color: white;
+}
+
+#btnSair:hover {
+    background-color: #922b21;
+}
+
+.botoes button[hidden] {
+    display: none;
+}
+
+
+.editando {
+    outline: 2px dashed #426b9a;
+    outline-offset: 4px;
+    border-radius: 3px;
+    cursor: text;
+}
+
+
+@media print {
+    .botoes {
+        display: none;
+    }
+
+    .editando {
+        outline: none;
+    }
+}
+
